@@ -22,11 +22,10 @@ if ip is None:
     tone(speaker_gpio, tones.C, 500)
     raise RuntimeError("Wi-Fi connect timeout")
 
+led.on()
 tone(speaker_gpio, tones.C, 100)
 tone(speaker_gpio, tones.G, 100)
 tone(speaker_gpio, tones.HiC, 200)
-
-led.on()
 
 time.sleep(0.5)
 
